@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://mybatis.apache.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dommy.dao.StudentDao">
+
+	<!-- 查询列表 -->
+	<select id="getList" parameterType="Map" resultType="Student">
+		select * from t_student
+		where 1=1
+		<if test="name!=null and name!=''"> and name like CONCAT('%',#{name},'%') </if>
+		order by id
+	</select>
+
+	<!-- 查询数量 -->
+	<select id="getCount" parameterType="Map" resultType="int">
+		select count(*) from t_student
+		where 1=1
+		<if test="name!=null and name!=''"> and name like CONCAT('%',#{name},'%') </if>
+	</select>
+</mapper>
