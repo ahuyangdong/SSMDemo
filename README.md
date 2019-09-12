@@ -10,7 +10,7 @@
 ## 框架选型
 Spring+SpringMVC+Mybatis
 ## 博客地址
-https://blog.csdn.net/column/details/19885.html
+https://blog.csdn.net/ahuyangdong/article/category/9272336
 
 通过6篇文章对《Spring+SpringMVC+Mybatis（SSM）框架搭建》进行分阶段讲解，从Maven插件配置、项目创建、框架配置、实例开发等阶段系统的分析了SSM框架搭建的方法。
 
